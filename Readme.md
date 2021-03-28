@@ -4,3 +4,7 @@ Data obtained from my replays.
 
 Result:
 ![Screenshot](./corr.png)
+
+Heatmap:
+
+![Screenshot](./heatmap.png)

@@ -129,8 +129,10 @@ def get_heatmap():
     im = ax.imshow(corr_matrix)
     im.set_clim(-1, 1)
     ax.grid(False)
-    ax.xaxis.set(ticks=(0, 1, 2), ticklabels=('level', 'apm', 'kills'))
-    ax.yaxis.set(ticks=(0, 1, 2), ticklabels=('level', 'apm', 'kills'))
+
+    names = ('Level', 'APM', 'Kills')
+    ax.xaxis.set(ticks=(0, 1, 2), ticklabels=names)
+    ax.yaxis.set(ticks=(0, 1, 2), ticklabels=names)
     ax.set_ylim(2.5, -0.5)
     for i in range(3):
         for j in range(3):
