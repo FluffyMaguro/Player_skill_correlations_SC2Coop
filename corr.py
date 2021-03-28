@@ -119,7 +119,8 @@ def get_graphs():
 
     plt.tight_layout(h_pad=2)  # Padding between plots
     plt.subplots_adjust(top=0.91)  # Adjust title padding
-    plt.show()
+    plt.savefig('corr.png')
+    # plt.show()
 
 
 def get_heatmap():
@@ -143,7 +144,8 @@ def get_heatmap():
                     va='center',
                     color='black')
     cbar = ax.figure.colorbar(im, ax=ax, format='% .2f')
-    plt.show()
+    lt.savefig('heatmap.png')
+    # plt.show()
 
 
 get_graphs()
