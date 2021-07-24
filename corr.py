@@ -144,7 +144,7 @@ def get_heatmap():
                     va='center',
                     color='black')
     cbar = ax.figure.colorbar(im, ax=ax, format='% .2f')
-    lt.savefig('heatmap.png')
+    plt.savefig('heatmap.png')
     # plt.show()
 
 
